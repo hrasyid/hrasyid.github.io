@@ -5,7 +5,14 @@
 <body>
   This page will close after 3 seconds..
   <script type="text/javascript">
-    setTimeout(function() { window.close(); }, 3000);
+    setTimeout(function() { 
+      if (window.hasOwnProperty("WalletNativeInterface")) {
+             if (typeof window.WalletNativeInterface.onSuccess === "function") {
+                window.WalletNativeInterface.onSuccess(data);
+             }
+          }
+      window.close(); 
+    }, 3000);
   </script>
 
 </body>
