@@ -6,12 +6,15 @@
   This page will close after 3 seconds..
   <script type="text/javascript">
     setTimeout(function() { 
+      console.log('1');
       if (window.hasOwnProperty("GWAJavaScriptNativeInterface")) {
+        console.log('2');
              if (typeof window.GWAJavaScriptNativeInterface.onSuccess === "function") {
+               console.log('3');
                 window.GWAJavaScriptNativeInterface.onSuccess();
+               console.log('4');
              }
-          }
-      window.close(); 
+      }
     }, 3000);
   </script>
 
