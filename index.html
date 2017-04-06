@@ -8,7 +8,7 @@
     setTimeout(function() { 
       if (window.hasOwnProperty("GWAJavaScriptNativeInterface")) {
              if (typeof window.GWAJavaScriptNativeInterface.onSuccess === "function") {
-                window.GWAJavaScriptNativeInterface.onSuccess(data);
+                window.GWAJavaScriptNativeInterface.onSuccess();
              }
           }
       window.close(); 
