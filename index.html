@@ -6,9 +6,9 @@
   This page will close after 3 seconds..
   <script type="text/javascript">
     setTimeout(function() { 
-      if (window.hasOwnProperty("WalletNativeInterface")) {
-             if (typeof window.WalletNativeInterface.onSuccess === "function") {
-                window.WalletNativeInterface.onSuccess(data);
+      if (window.hasOwnProperty("GWAJavaScriptNativeInterface")) {
+             if (typeof window.GWAJavaScriptNativeInterface.onSuccess === "function") {
+                window.GWAJavaScriptNativeInterface.onSuccess(data);
              }
           }
       window.close(); 
